@@ -21,9 +21,10 @@ your shell / command prompt:
 
   $ chi-server
 
-This will start an http server reachable on all interfaces on port 80, which
+This will start an HTTP server reachable on all interfaces on port 80, which
 will re-issue incoming requests to localhost:4028 (the default host:port for
-the CGMiner RPC API.)
+the CGMiner RPC API.)  This server can be started at any time, but will of
+course only be useful once the CGMiner API has been started.
 
 
 Options
