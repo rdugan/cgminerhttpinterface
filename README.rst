@@ -44,3 +44,27 @@ Options
                           Port used by API server
     -a API_HOST, --api_host API_HOST
                           Host name/address used by API server
+
+
+Using the HTTP Interface
+========================
+
+URL structure is *\http://<host>[:port]/<command>[+command...]/[parameter]*. For
+example:
+
+- *\http://localhost/summary+pools/* : combined summary and pools report on the
+  default port
+- *\http://localhost:8080/gpu/0* : single gpu status on port 8080 (as defined in
+  the command line)  
+
+Visiting the server root (e.g. *\http://localhost/*) will issue the compound
+'summary+devs' command.
+
+At this point in time, the HTTP endpoint will simply serve the response of the
+API as is - meaning a JSON formatted data structure containing sections for each
+command issued. All commands available via the `CGMiner API`_ are also available
+via the HTTP endpoint - in fact the HTTP endpoint performs no command validation
+at all, relying on the API to validate requests and respond appropriately.
+
+
+.. _CGMiner API: https://github.com/ckolivas/cgminer/blob/master/API-README
