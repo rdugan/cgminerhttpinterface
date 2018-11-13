@@ -5,7 +5,7 @@ def readme():
         return f.read()
 
 setup(name='cgminerhttpinterface',
-      version='0.1',
+      version='0.1.1',
       description='HTTP endpoint for CGMiner RPC conforming interfaces',
       long_description=readme(),
       classifiers=[
