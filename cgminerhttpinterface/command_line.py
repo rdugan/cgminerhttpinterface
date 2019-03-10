@@ -4,7 +4,7 @@ from argparse import ArgumentParser
 
 from .httprequesthandler import CGMinerHTTPRequestHandler
 
-HTTP_PORT = 80
+HTTP_PORT = 8080
 API_PORT = 4028
 API_HOST = '127.0.0.1'
 
