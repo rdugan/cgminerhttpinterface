@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 def readme():
     with open('README.rst') as f:
         return f.read()
 
 setup(name='cgminerhttpinterface',
-      version='0.1.1',
+      version='0.1.2',
       description='HTTP endpoint for CGMiner RPC conforming interfaces',
       long_description=readme(),
       classifiers=[
@@ -26,7 +26,7 @@ setup(name='cgminerhttpinterface',
       author='rdugan',
       author_email='cgmhi-dev@mailnicks.org',
       license='Apache',
-      packages=['cgminerhttpinterface'],
+      packages=find_packages(),
       python_requires='>=3',
       entry_points={
           'console_scripts': ['chi-server=cgminerhttpinterface.command_line:start_server'],
