@@ -21,7 +21,7 @@ your shell / command prompt:
 
   $ chi-server
 
-This will start an HTTP server reachable on all interfaces on port 80, which
+This will start an HTTP server reachable on all interfaces on port 8080, which
 will re-issue incoming requests to localhost:4028 (the default host:port for
 the CGMiner RPC API.)  This server can be started at any time, but will of
 course only be useful once the CGMiner API has been started.
@@ -54,7 +54,7 @@ example:
 
 - *\http://localhost/summary+pools/* : combined summary and pools report on the
   default port
-- *\http://localhost:8080/gpu/0* : single gpu status on port 8080 (as defined in
+- *\http://localhost:8081/gpu/0* : single gpu status on port 8081 (as defined in
   the command line)  
 
 Visiting the server root (e.g. *\http://localhost/*) will issue the compound
